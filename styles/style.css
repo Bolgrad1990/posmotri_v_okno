@@ -102,12 +102,14 @@ ol {
   border: 1px solid #fff;
 }
 .search-form__checkbox-list{
-  margin-right: 12px;
+  /*margin-right: 12px;*/
+  display: flex;
+  justify-content: space-between;
 
 }
-.search-form__checkbox-list:last-child{
+/*.search-form__checkbox-list:last-child{
   margin-right: 0;
-}
+}*/
 
 .search-form__submit-button {
   width: 194px;
@@ -116,7 +118,8 @@ ol {
   width: 711px;
 }
 .result__video-container {
-  position: relative;
+  /*position: relative;*/
+  margin-bottom: 16px;
 }
 .result__video {
   width: 100%;
