@@ -47,6 +47,7 @@ ol {
   width: 100%;
   margin: 133px 30px;
 }
+
 .title {
   font-family: Oswald, sans-serif;
   font-weight: bold;
@@ -79,14 +80,23 @@ ol {
 }
 .search-form__label {
   color: #fff;
+  display: flex;
+  justify-content: space-between;
+  width: 59px;
+
+}
+.search-form__label:has(:focus-visible){
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 .search-form__textfield {
   background-color: transparent;
   border: 0;
-  border-top: 2px solid #fff;
-  border-bottom: 2px solid #fff;
   width: 225px;
+  cursor: pointer;
+  appearance: none;
 }
+
 .search-form__textfield::placeholder {
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
@@ -101,7 +111,18 @@ ol {
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::before{
+  content: '';
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+}
+
 .search-form__checkbox-list{
   /*margin-right: 12px;*/
   display: flex;
@@ -180,6 +201,7 @@ ol {
   font-weight: bold;
   font-size: 18px;
   background-color: transparent;
+  cursor: pointer;
 }
 .search-form__submit-button{
   padding: 0;
