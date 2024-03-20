@@ -82,7 +82,9 @@ ol {
   color: #fff;
   display: flex;
   justify-content: space-between;
-
+}
+.search-form__label:focus{
+  border: 1px solid #fff;
 }
 
 .search-form__label-text{
@@ -96,14 +98,17 @@ ol {
   background-color: transparent;
   border: 0;
   width: 225px;
-  cursor: pointer;
   appearance: none;
-  border-top: 2px solid #fff;
-  border-bottom: 2px solid #fff;
+  border-top: 1px solid rgb(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgb(255, 255, 255, 0.7);
+  padding: 4px 0px 2px 0px;
+}
+.search-form__textfield:active{
+  border: 1px solid rgb(255, 255, 255, 0.7);
 }
 
 .search-form__textfield::placeholder {
-  color: #fff;
+  color: rgb(255, 255, 255, 0.7);
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: normal;
   font-size: 18px;
@@ -130,14 +135,10 @@ ol {
 }
 
 .search-form__checkbox-list{
-  /*margin-right: 12px;*/
   display: flex;
   justify-content: space-between;
 
 }
-/*.search-form__checkbox-list:last-child{
-  margin-right: 0;
-}*/
 
 .search-form__submit-button {
   width: 194px;
@@ -146,7 +147,7 @@ ol {
   width: 711px;
 }
 .result__video-container {
-  /*position: relative;*/
+  position: relative;
   margin-bottom: 20px;
   width: 100%;
   height: 386px;
@@ -162,13 +163,16 @@ ol {
 }
 .content__list {
   overflow: hidden;
-  /*position: relative;*/
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   gap: 30px;
   height: 298px;
   margin-top: 30px;
+}
+.content__list-item:focus{
+border: 1px solid #fff;
 }
 .cards-list-item-template {
   width: 100%;
@@ -190,6 +194,7 @@ ol {
 }
 .content__card-link {
   text-decoration: none;
+  margin: 2px;
 }
 .content__video-card-description {
   color: #fff;
@@ -222,6 +227,9 @@ ol {
 .button:active{
   background-color: #545050;
 }
+button:focus{
+  border: 1px solid #fff;
+}
 .search-form__submit-button{
   padding: 0;
 }
@@ -230,7 +238,7 @@ ol {
 }
 .more-button {
   width: 100%;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   
 }
 .visually-hidden {
