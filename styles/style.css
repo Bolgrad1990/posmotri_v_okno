@@ -16,6 +16,7 @@ html {
   background-color: #1b1919;
   inline-size: 1200px;
   block-size: 100%;
+  display: flex;
 }
 
 h1,
@@ -46,7 +47,7 @@ ol {
   justify-content: space-evenly;
   width: 1200px;
   height: 800px;
-  margin: 133px 30px;
+  margin: 0px 30px 133px;
 }
 
 .title {
@@ -84,14 +85,14 @@ ol {
   display: flex;
   justify-content: space-between;
 }
-.search-form__label:focus{
+.search-form__label:focus {
   border: 1px solid #fff;
 }
 
-.search-form__label-text{
+.search-form__label-text {
   padding-left: 3px;
 }
-.search-form__label-text:hover{
+.search-form__label-text:hover {
   text-decoration: underline;
 }
 
@@ -104,7 +105,7 @@ ol {
   border-bottom: 1px solid rgb(255, 255, 255, 0.7);
   padding: 4px 0px 2px 0px;
 }
-.search-form__textfield:active{
+.search-form__textfield:active {
   border: 1px solid rgb(255, 255, 255, 0.7);
 }
 
@@ -117,7 +118,7 @@ ol {
 
 /*---ситлизация чекбоксов---*/
 
-.search-form__pseudo-checkbox{
+.search-form__pseudo-checkbox {
   display: inline-block;
   width: 19px;
   height: 19px;
@@ -128,17 +129,16 @@ ol {
   justify-content: center;
   align-content: center;
 }
-.search-form__checkbox:checked + .search-form__pseudo-checkbox::before{
-  content: '';
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
+  content: "";
   background-color: #fff;
   width: 15px;
   height: 15px;
 }
 
-.search-form__checkbox-list{
+.search-form__checkbox-list {
   display: flex;
   justify-content: space-between;
-
 }
 
 .search-form__submit-button {
@@ -172,8 +172,8 @@ ol {
   height: 298px;
   margin-top: 30px;
 }
-.content__list-item:focus{
-border: 1px solid #fff;
+.content__list-item:focus {
+  border: 1px solid #fff;
 }
 .cards-list-item-template {
   width: 100%;
@@ -181,7 +181,6 @@ border: 1px solid #fff;
 .content__video-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  
 }
 .content__video-card-title {
   color: #fff;
@@ -190,7 +189,7 @@ border: 1px solid #fff;
   font-style: 30px;
   text-transform: uppercase;
 }
-.content__video-card-title:hover{
+.content__video-card-title:hover {
   text-decoration: underline;
 }
 .content__card-link {
@@ -203,10 +202,10 @@ border: 1px solid #fff;
   font-weight: bold;
   font-style: 18px;
 }
-.content__video-card-description:hover{
+.content__video-card-description:hover {
   text-decoration: underline;
 }
-.content__video-card-description-container{
+.content__video-card-description-container {
   width: 200px;
 }
 .content__video-card-description-container:active {
@@ -225,22 +224,21 @@ border: 1px solid #fff;
   background-color: transparent;
   cursor: pointer;
 }
-.button:active{
+.button:active {
   background-color: #545050;
 }
-button:focus{
+button:focus {
   border: 1px solid #fff;
 }
-.search-form__submit-button{
+.search-form__submit-button {
   padding: 0;
 }
-.search-form__submit-button:hover{
+.search-form__submit-button:hover {
   text-decoration: underline;
 }
 .more-button {
   width: 100%;
   margin-bottom: 10px;
-  
 }
 .visually-hidden {
   position: absolute;
