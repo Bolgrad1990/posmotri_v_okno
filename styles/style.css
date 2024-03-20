@@ -82,19 +82,24 @@ ol {
   color: #fff;
   display: flex;
   justify-content: space-between;
-  width: 59px;
 
 }
-.search-form__label:has(:focus-visible){
-  border-top: 2px solid #fff;
-  border-bottom: 2px solid #fff;
+
+.search-form__label-text{
+  padding-left: 3px;
 }
+.search-form__label-text:hover{
+  text-decoration: underline;
+}
+
 .search-form__textfield {
   background-color: transparent;
   border: 0;
   width: 225px;
   cursor: pointer;
   appearance: none;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 
 .search-form__textfield::placeholder {
@@ -113,6 +118,7 @@ ol {
   border: 1px solid #fff;
   cursor: pointer;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
 }
@@ -156,7 +162,7 @@ ol {
 }
 .content__list {
   overflow: hidden;
-  position: relative;
+  /*position: relative;*/
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -168,8 +174,9 @@ ol {
   width: 100%;
 }
 .content__video-card {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
 }
 .content__video-card-title {
   color: #fff;
@@ -177,6 +184,9 @@ ol {
   font-weight: bold;
   font-style: 30px;
   text-transform: uppercase;
+}
+.content__video-card-title:hover{
+  text-decoration: underline;
 }
 .content__card-link {
   text-decoration: none;
@@ -187,8 +197,14 @@ ol {
   font-weight: bold;
   font-style: 18px;
 }
-.content__video-card-description-container {
-  /*width: 194px;*/
+.content__video-card-description:hover{
+  text-decoration: underline;
+}
+.content__video-card-description-container{
+  width: 200px;
+}
+.content__video-card-description-container:active {
+  background-color: #545050;
 }
 .content__video-card-thumbnail {
   width: 194px;
@@ -203,8 +219,14 @@ ol {
   background-color: transparent;
   cursor: pointer;
 }
+.button:active{
+  background-color: #545050;
+}
 .search-form__submit-button{
   padding: 0;
+}
+.search-form__submit-button:hover{
+  text-decoration: underline;
 }
 .more-button {
   width: 100%;
