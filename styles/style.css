@@ -43,8 +43,8 @@ ol {
 .content {
   display: flex;
   align-items: flex-end;
-  /*gap: 30px;*/
-  justify-content: space-evenly;
+  gap: 30px;
+  /*justify-content: space-evenly;*/
   width: 1200px;
   height: 800px;
   margin: 0px 30px 133px;
@@ -160,7 +160,7 @@ ol {
 /*---блок с карточками---*/
 
 .content__details {
-  width: 394px;
+  width: 399px;
 }
 .content__list {
   overflow: hidden;
