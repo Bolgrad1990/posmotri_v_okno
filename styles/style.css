@@ -233,6 +233,11 @@ ol {
 .content__video-card-thumbnail {
   width: 194px;
 }
+
+/*
+    стили кнопки
+*/
+
 .button {
   height: 34px;
   border: 1px solid #fff;
