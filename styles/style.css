@@ -39,8 +39,8 @@ ol {
 }
 
 /*
- мои стили
- */
+    мои стили
+*/
 
 .content {
   display: flex;
@@ -48,8 +48,8 @@ ol {
   gap: 30px;
   /*justify-content: space-evenly;*/
   width: 1200px;
-  height: 800px;
-  margin: 0px 30px 133px;
+  height: 534px;
+  margin: 133px 30px;
 }
 
 .title {
@@ -64,7 +64,7 @@ ol {
 }
 
 /*
-стилизация формы
+    стилизация формы
 */
 
 .search-form {
@@ -125,7 +125,7 @@ ol {
 }
 
 /*
-стилизация чекбоксов
+    стилизация чекбоксов
 */
 
 .search-form__pseudo-checkbox {
@@ -170,7 +170,7 @@ ol {
 }
 
 /*
-блок с карточками
+    блок с карточками
 */
 
 .content__details {
@@ -207,6 +207,7 @@ ol {
   text-decoration: underline;
 }
 .content__card-link {
+  display: inline-block;
   text-decoration: none;
   margin: 2px;
 }
@@ -222,7 +223,10 @@ ol {
 .content__video-card-description-container {
   width: 200px;
 }
-.content__video-card-description-container:active {
+/*.content__video-card-description-container:active {
+  background-color: #545050;
+}*/
+.content__card-link.content__card-link_current:active{
   background-color: #545050;
 }
 .content__video-card-thumbnail {
