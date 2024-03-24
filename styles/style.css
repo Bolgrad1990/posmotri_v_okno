@@ -181,9 +181,12 @@ ol {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 30px;
+  /*gap: 30px;*/
   height: 298px;
   margin-top: 30px;
+}
+.content__list-item:not(:last-child){
+  margin-bottom: 30px;
 }
 .content__list-item:focus {
   border: 1px solid #fff;
@@ -244,7 +247,7 @@ text-decoration: underline;
   background-color: #545050;
 }
 button:focus {
-  border: 1px solid #fff;
+  outline: 1px solid #fff;
 }
 .search-form__submit-button {
   padding: 0;
@@ -255,6 +258,9 @@ button:focus {
 .more-button {
   width: 100%;
   margin-bottom: 10px;
+}
+.more-button:focus{
+  outline: 1px solid #fff;
 }
 .visually-hidden {
   position: absolute;
