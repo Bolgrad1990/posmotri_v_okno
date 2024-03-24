@@ -88,7 +88,7 @@ ol {
   display: flex;
   justify-content: space-between;
 }
-.search-form__label:has(:focus-visible){
+.search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
 }
 .search-form__label-text {
@@ -122,7 +122,7 @@ ol {
   font-weight: normal;
   font-size: 18px;
 }
-.search-form__textfield:focus{
+.search-form__textfield:focus {
   border: 2px solid red;
 }
 
@@ -159,9 +159,9 @@ ol {
 .result__video-container {
   position: relative;
   margin-bottom: 20px;
- /* width: 100%;*/
- object-fit: cover;
- object-position: center;
+  /* width: 100%;*/
+  object-fit: cover;
+  object-position: center;
   height: 386px;
 }
 .result__video {
@@ -185,7 +185,7 @@ ol {
   height: 298px;
   margin-top: 30px;
 }
-.content__list-item:not(:last-child){
+.content__list-item:not(:last-child) {
   margin-bottom: 30px;
 }
 .content__list-item:focus {
@@ -200,7 +200,7 @@ ol {
   text-decoration: none;
   margin: 2px;
 }
-.content__card-link.content__card-link_current:active{
+.content__card-link.content__card-link_current:active {
   background-color: #545050;
 }
 .content__video-card {
@@ -208,7 +208,7 @@ ol {
   grid-template-columns: 1fr 1fr;
 }
 .content__video-card:has(.content__video-card-title):hover {
-text-decoration: underline;
+  text-decoration: underline;
 }
 .content__video-card-title {
   font-family: "Oswald", sans-serif;
@@ -259,7 +259,7 @@ button:focus {
   width: 100%;
   margin-bottom: 10px;
 }
-.more-button:focus{
+.more-button:focus {
   outline: 1px solid #fff;
 }
 .visually-hidden {
