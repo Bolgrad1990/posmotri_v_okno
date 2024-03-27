@@ -47,7 +47,6 @@ ol {
   display: flex;
   align-items: flex-end;
   gap: 30px;
-  /*justify-content: space-evenly;*/
   width: 1200px;
   height: 534px;
   margin: 133px 30px;
@@ -58,6 +57,7 @@ ol {
   font-size: 75px;
   line-height: 94%;
   text-transform: uppercase;
+  margin-bottom: 22px;
 }
 .content__accent {
   color: #545050;
@@ -70,11 +70,9 @@ ol {
 }
 .result__video-container {
   position: relative;
-  /* width: 100%;*/
   object-fit: cover;
   object-position: center;
   height: 386px;
- 
 }
 .result__video {
   width: 100%;
@@ -89,7 +87,6 @@ ol {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding-bottom: 18px;
 }
 .search-form__fieldset {
   border: none;
@@ -140,9 +137,6 @@ ol {
   font-weight: normal;
   font-size: 18px;
 }
-/*.search-form__textfield:focus {
-  border: 2px solid red;
-}*/
 
 /*
     стилизация чекбоксов
@@ -184,7 +178,6 @@ ol {
   display: flex;
   flex-direction: column;
   height: 298px;
-  margin-top: 38px;
 }
 .content__list-item:not(:last-child) {
   margin-bottom: 30px;
@@ -207,7 +200,7 @@ ol {
 .content__card-link:active {
   background-color: #545050;
 }
-.content__card-link_current{
+.content__card-link_current {
   background-color: #545050;
 }
 .content__video-card {
@@ -258,7 +251,7 @@ ol {
 .button:focus {
   outline: 1px solid #fff;
 }
-.button:hover{
+.button:hover {
   text-decoration: underline;
 }
 .search-form__submit-button {
@@ -267,7 +260,6 @@ ol {
 }
 .more-button {
   width: 100%;
-  margin-bottom: 18px;
 }
 .more-button:focus {
   outline: 1px solid #fff;
